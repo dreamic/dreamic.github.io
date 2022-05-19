@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Links -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+      <!-- Stylesheets -->
+      <script src="js/submit.js"></script>
+      <script src="js/display.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container">
+         <div class="card border-0">
+            <div class="card-body">
+               <form id="myForm">
+                  <!-- Frequency -->
+                  <div id="freq">
+                     <h2>Choose your frequency</h2>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq1" name="freq1" value="Each class" onclick="myFunction()">
+                        <label>Each class</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq2" name="freq2" value="Each week" onclick="myFunction()">
+                        <label>Each week</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq3" name="freq3" value="Each month" onclick="myFunction()">
+                        <label>Each month</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq4" name="freq4" value="Each term" onclick="myFunction()">
+                        <label>Each term</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq5" name="freq5" value="Each year" onclick="myFunction()">
+                        <label>Each year</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="freq6" name="freq6" value="Each unit" onclick="myFunction()">
+                        <label>Each unit</label>
+                     </div>
+                  </div>
+                  <!-- Frequency -->
+                  <br>
+                  <!-- Duration -->
+                  <div id="dur">
+                     <h2>Choose your duration</h2>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="dur1" name="dur1" value="10 mins" onclick="myFunction2()">
+                        <label>10 mins</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="dur2" name="dur2" value="30 mins" onclick="myFunction2()">
+                        <label>30 mins</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="dur3" name="dur3" value="1 hour" onclick="myFunction2()">
+                        <label>1 hour</label>
+                     </div>
+                  </div>
+                  <!-- Duration -->
+               </form>
+               <br>
+               <div class="card p-2">
+                  <h3>Frequency</h3>
+                  <span id="results">None</span><br>
+                  <h3>Duration</h3>
+                  <span id="results2">None</span>
+               </div>
+               <br>
+               <button onclick="SubForm()" class="btn btn-dark">Submit</button>
+            </div>
+         </div>
+      </div>
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.js"
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+         crossorigin="anonymous"></script> 
+   </body>
+</html>
